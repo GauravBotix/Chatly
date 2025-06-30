@@ -21,6 +21,10 @@ app.use(express.json({ limit: "10mb" }));
 app.use(cookieparser());
 app.use(express.urlencoded({ extended: true, limit: "10mb" }));
 
+app.get("/", (req, res) => {
+  res.status(200).send("hello new request.");
+});
+
 app.use("/api/auth", authRouter);
 app.use("/api/message", messageRouter);
 
