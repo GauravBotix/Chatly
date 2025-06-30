@@ -10,9 +10,14 @@ const generateToken = async (res, userId) => {
 
   const cookiesOption = {
     httpOnly: true,
-    sameSite: Production ? "None" : "Lax",
-    secure: Production,
+    sameSite: "None",
+    secure: false,
   };
+  // const cookiesOption = {
+  //   httpOnly: true,
+  //   sameSite: Production ? "None" : "Lax",
+  //   secure: Production,
+  // };
 
   res.cookie("JWTToken", token, {
     maxAge: 7 * 24 * 60 * 60 * 1000,
