@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+
+
+@plugin "daisyui"{
+   themes: light --default;
+}
+
+@theme{
+   --color-primary-900:#ebf4f5;
+   --color-secondary-900:#b5c6e0;
+   --color-text-900:#145277;
+   --color-slider-900:#bbc7dc;
+
+   --color-chat-primary-900:#E8ECEA;
+   --color-chat-secondary-900:#30C67C;
+   --color-chat-third-900:#EBEBEB;
+   --color-chat-fourth-900:#567BC4;
+
+
+}
+
+/*103783  */
