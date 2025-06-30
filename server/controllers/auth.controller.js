@@ -98,11 +98,11 @@ const login = async (req, res) => {
 const logout = (req, res) => {
   try {
     const Production = process.env.NODE_ENV === "production";
-   const cookiesOption = {
-    httpOnly: true,
-    sameSite: "None",
-    secure: false,
-  };
+    const cookiesOption = {
+      httpOnly: true,
+      sameSite: "None",
+      secure: true,
+    };
     // const cookiesOption = {
     //   httpOnly: true,
     //   sameSite: Production ? "None" : "Lax",

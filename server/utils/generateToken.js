@@ -11,7 +11,7 @@ const generateToken = async (res, userId) => {
   const cookiesOption = {
     httpOnly: true,
     sameSite: "None",
-    secure: false,
+    secure: true,
   };
   // const cookiesOption = {
   //   httpOnly: true,
